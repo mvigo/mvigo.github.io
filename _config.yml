@@ -2,12 +2,11 @@
 #
 
 # Site settings
-title: Spectral
+title: Manuel Vigo
 description: |
-  Another fine responsive  
-  site template freebie  
-  crafted by [HTML5 UP](http://html5up.net)
-owner: Your Name # or company name
+  Design Strategist  
+  Say hi: [HTML5 UP](manuel@tacutacu.pe)
+owner: Manuel # or company name
 first_published: 2016 # if migrating another site, the year of your first publish
 email: manuel@tacutacu.pe
 baseurl: "" # the subpath of your site, e.g. /blog
