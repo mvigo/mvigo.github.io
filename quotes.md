@@ -1,0 +1,23 @@
+---
+layout: default
+title: Quotes
+published: true
+---
+
+## Quotes
+
+A place to collect the quotes I have jotted down at one point or another:
+
+* "A writer is, by definition, a disturber of the peace" -- <strong> James Baldwin. </strong>
+
+* [The act of Design] “devises courses of action aimed at changing existing situations into preferred ones.” -- <strong> Herbert Simon. </strong>
+
+
+
+* When asked: "To whom does design address itself: to the greatest number, to the specialist of an enlightened matter, to a privileged social class?" <strong> Charles Eames </strong> responded: "Design addresses itself to the need."
+
+
+
+* "I remember a sentence in a Minale Tattecrsfield book that said: In my experience, every designer whose prime aim in going into business was to make money while at the same time producing good design, failed on both counts. I believe that designing is something you have to do for love. If you are committed first and foremost to producing good design then you’ll make money as a by-product because good design is something people are willing to pay for. But that financial reward will be a bonus, a gift. I agree."  -- <strong> Stefan Sagmeister </strong>
+
+* "So many dreams have been broken to give way to yours." -- <strong> Yoko Ono </strong>

@@ -1,0 +1,27 @@
+---
+layout: page
+title: Articles
+---
+
+<strong>A selection of published articles/features/blogs</strong>
+
+
+### Sounds & Colours
+	
+In 2015 I contributed to Sounds and Colours Peru, a book, CD and DVD taking a look at contemporary Peruvian culture, and the musical, cultural and folkloric icons that continue to have a big impact on the country’s identity. I contributed to the book with an article on Peru's [music pirates](http://soundsandcolours.com/articles/peru/clandestine-lands-limas-music-pirates-28952/)
+
+<p class="message">
+  Across 200 pages, 19 tracks and 2 hours of DVD video, we show another side of Peru, bringing life to this multicultural nation. From the indigenous traditions of the Andes, to the country’s reinstatement of its Afro-Peruvian identity, and on to the contemporary art, film and music that thrives on the coast. We worked with a team of writers, researchers, film-makers, musicians, artists and illustrators from around the world to put together Sounds and Colours Peru, a unique guide to Peruvian culture made with love, passion and integrity.
+  </p>
+
+<em>ISBN: 978-0-9927043-2-2</em>
+<br>Sounds and Colours: Peru - [Out Now](http://soundsandcolours.com/issues/sounds-and-colours-peru/)
+
+### Next City
+[The Rockefeller Foundation](https://www.rockefellerfoundation.org/) and [Next City](https://nextcity.org/) aimed to start a dialog about the informal economy and the impact it has in developing cities. Six writers were selected around the world to research and tell stories from the informal city. I was one of them. 
+
+Head over to [The Informal City Dialogues](https://nextcity.org/informalcity) to read all my stories from this year-long project. 
+
+You can also read my feature story on [Lima's transportation woes.](http://nextcity.org/forefront/view/slow-jam)
+
+
