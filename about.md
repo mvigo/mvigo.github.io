@@ -16,11 +16,13 @@ I'm a huge music nerd, and during my time at college worked at [WRGP RadiateFM](
 
 In 2011, I started [Tacu Tacu Records](https://tacutacu.pe) a small record label, as a way of promoting contemporary Peruvian music. 
 
-In my spare time I enjoy [writing and recording music](https://mvmv.bandcamp.com), finding new music, and learning new things. 
+In my spare time I enjoy <a href="https://mvmv.bandcamp.com">writting and recording music</a>, finding new music, and learning new things. 
 
 Equal parts Peruvian and American, I currenty live in <del> Lima, Peru.</del> <strong> Barcelona, Spain </strong>
 
-Here's what I'm doing [now.](https://mvigo.github.io/now)
+Here's what I'm doing <a href="https://mvigo.github.io/now">now</a>
+
+<header>
 
 <h4>Contact </h4>
 
