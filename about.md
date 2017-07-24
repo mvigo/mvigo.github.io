@@ -12,9 +12,9 @@ I am curious about <strong>design</strong> in its most abstract form, and how it
 <header>
 <h4>Other Tidbits</h4>
 
-I'm a huge music nerd, and during my time at college worked at [WRGP RadiateFM](http://wrgp.radio.net/) as a DJ and Jazz Director. 
+I'm a huge music nerd, and during my time at college worked at <a href="http://wrgp.radio.net/">WRGP Radio</a> as a DJ and Jazz Director. 
 
-In 2011, I started [Tacu Tacu Records](https://tacutacu.pe) a small record label, as a way of promoting contemporary Peruvian music. 
+In 2011, I started <a href="https://tacutacu.pe">Tacu Tacu Records</a> a small record label, as a way of promoting contemporary Peruvian music. 
 
 In my spare time I enjoy <a href="https://mvmv.bandcamp.com">writting and recording music</a>, finding new music, and learning new things. 
 
@@ -22,8 +22,8 @@ Equal parts Peruvian and American, I currenty live in <del> Lima, Peru.</del> <s
 
 Here's what I'm doing <a href="https://mvigo.github.io/now">now</a>
 
-<header>
 
+<header>
 <h4>Contact </h4>
 
 Interested in collaborating on a project? Reach out!
@@ -32,7 +32,7 @@ Twitter: <a href="https://twitter.com/manuelvigo">@manuelvigo</a>
 Email: <a href="mailto:hello@manuelvigo.com">hello@manuelvigo.com</a>
 
 <h4> CV </h4>
-<a href="http://manuelvigo.com/CV.pdf">.PDF</a>
+<a href="http://manuelvigo.com/CV.pdf">MY CV</a>
 
 
 
