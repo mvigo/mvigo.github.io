@@ -3,15 +3,18 @@ layout: page
 title: About Me
 ---
 
-I am a marketer and strategic designer by profession. I have over 7 years of experience in content, marketing, and web design strategies. I've also worked as a journalist -- you can read some of my writing [here](https://mvigo.github.io/published/). I have a BA in International Relations and Philosophy from [Florida International University.](http://www.fiu.edu/) Currently I'm studying a Masters in Design Management at IED Barcelona. 
+At university I pursued a degree in international relations and philosophy. After graduating my passion for writing led me to a year-long collaboration with The Rockefeller Foundation, where I was focused on researching informal economies. During this project, I was able to see first-hand the power of design thinking and co-creation to generate real and impactful change in the globe.
 
-I am curious about <strong>design</strong> in its most abstract form, and how it can improve peoples lives and experiences.
+I then spent over 4 years working in digital marketing, web design strategies, and user experience, as a marketing manager. It was here that I learned to lead innovation projects within a business context, and strengthened my belief that I wanted to keep developing my skills in this field. This led me to pursue a Masters in Design Management at IED Barcelona.
 
-I'm a huge music nerd, and previously worked at [WRGP RadiateFM](http://wrgp.radio.net/) as a DJ and Jazz Director. 
+I am curious about <strong>design</strong> in its most abstract form, and how it can improve peoples lives and experiences. Today my aim is not only to apply these innovation processes, but to be an ambassador for the benefits of using these methodologies among groups and people that may not know them. Through this journey I have been fortunate to live and work on 4 continents, and appreciate the value of working with multidisciplinary and cross-cultural teams to achieve meaningful impact.
 
-In 2011, I started [Tacu Tacu Records](https://tacutacu.pe) a small record label, as a way of promoting contemporary Peruvian music.
+<header>
+<h4>Other Tidbits</h4>
 
-I'm curious about art, design, tech, urban policy, and the intersection of all these things.
+I'm a huge music nerd, and during my time at college worked at [WRGP RadiateFM](http://wrgp.radio.net/) as a DJ and Jazz Director. 
+
+In 2011, I started [Tacu Tacu Records](https://tacutacu.pe) a small record label, as a way of promoting contemporary Peruvian music. 
 
 In my spare time I enjoy [writing and recording music](https://mvmv.bandcamp.com), finding new music, and learning new things. 
 
@@ -19,14 +22,14 @@ Equal parts Peruvian and American, I currenty live in <del> Lima, Peru.</del> <s
 
 Here's what I'm doing [now.](https://mvigo.github.io/now)
 
-### Contact
+<h4>Contact </h4>
 
 Interested in collaborating on a project? Reach out!
 
-* Twitter: <a href="https://twitter.com/manuelvigo">@manuelvigo</a>
-* Email: <a href="mailto:hello@manuelvigo.com">hello@manuelvigo.com</a>
+Twitter: <a href="https://twitter.com/manuelvigo">@manuelvigo</a>
+Email: <a href="mailto:hello@manuelvigo.com">hello@manuelvigo.com</a>
 
-### CV
+<h4> CV </h4>
 <a href="http://manuelvigo.com/CV.pdf">.PDF</a>
 
 
