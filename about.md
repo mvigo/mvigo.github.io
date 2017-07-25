@@ -31,47 +31,10 @@ Interested in collaborating on a project? Reach out!
 Twitter: <a href="https://twitter.com/manuelvigo">@manuelvigo</a>
 Email: <a href="mailto:hello@manuelvigo.com">hello@manuelvigo.com</a>
 
-<h4> CV </h4>
-<a href="http://manuelvigo.com/CV.pdf">MY CV</a>
+<!-- <h4> CV </h4>
+<a href="http://manuelvigo.com/CV.pdf">MY CV</a> --> 
 
 
 
 
-<!-- I love learning about cool things like [Arduino](https://www.arduino.cc/), and Jekyll -- which was used to develop this [small site](https://mvigo.github.io/SiteInfo/). 
-
-In the past year my design work has received international recognition, including: 
-
-* <strong>2016 Ibero American Biennial of Design - Official Selection</strong> <br> 
-Selected by the Asociación Diseñadores de Madrid [(DIMAD)](http://www.bid-dimad.org/) to represent Peru in the service design category. 
-
-* <strong>PerúDesignNet</strong> <br> 
-[PerúDesignNet](http://perudesignnet.com/en/) was an international design and innovation competition that brought together universities, companies and citizens from all over the world, with the aim of using design to promote change and progress within Peru. 
-
---> 
-
-<!--
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
-
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
-
-There are currently two themes built on Poole:
-
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
-
-Learn more and contribute on [GitHub](https://github.com/poole).
-
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-
-Thanks for reading!
-
--->
 
