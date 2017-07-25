@@ -1,7 +1,6 @@
 ---
 layout: page
 title: About Me
-Description: This is a test. 
 ---
 
 At university I pursued a degree in international relations and philosophy. After graduating my passion for writing led me to a year-long collaboration with The Rockefeller Foundation, where I was focused on researching informal economies. During this project, I was able to see first-hand the power of design thinking and co-creation to generate real and impactful change in the globe.
