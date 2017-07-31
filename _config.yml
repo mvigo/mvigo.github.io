@@ -6,7 +6,7 @@ title: Manuel Vigo
 description: |
   Design Research and Strategy 
 #[Say hello!](mailto:manuel@tacutacu.pe)
-owner: Manuel # or company name
+owner: Manuel Vigo # or company name
 first_published: 2016 # if migrating another site, the year of your first publish
 email: manuel@tacutacu.pe
 baseurl: "" # the subpath of your site, e.g. /blog
