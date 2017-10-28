@@ -1,0 +1,301 @@
+// ---------------------------
+// Variables
+// ---------------------------
+// Colors
+$grey: #cdcdcd;
+$black: #212121;
+$kav-red: #d84445;
+$kav-darkBlue: #084259;
+$kav-midBlue: #027ca9;
+$kav-lightBlue: #78c1d7;
+
+// Typography
+$body-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// Layout
+$spacer: 1rem;
+
+// --------------------------
+// Mixins
+// --------------------------
+// Breakpoints
+@mixin breakpoint($point) {
+  @if $point == jumbo {
+    @media (min-width: 92.5em) {
+      @content;
+    } // 1480px +
+  } @else if $point == desktop {
+    @media (max-width: 81.1875em) {
+      @content;
+    } // 1299px -
+  } @else if $point == mindesktop {
+    @media (min-width: 81.25em) {
+      @content;
+    } // 1300px +
+  } @else if $point == laptop {
+    @media (max-width: 63.9375em) {
+      @content;
+    } // 1023px -
+  } @else if $point == minlaptop {
+    @media (min-width: 64em) {
+      @content;
+    } // 1024px  +
+  } @else if $point == tablet {
+    @media (max-width: 49.9375em) {
+      @content;
+    } // 799px -
+  } @else if $point == mintablet {
+    @media (min-width: 50em) {
+      @content;
+    } // 800px +
+  } @else if $point == phablet {
+    @media (max-width: 37.4375em) {
+      @content;
+    } // 599px -
+  } @else if $point == minphablet {
+    @media (min-width: 37.5em) {
+      @content;
+    } // 600px +
+  } @else if $point == mobileonly {
+    @media (max-width: 27em) {
+      @content;
+    } // 432px -
+  }
+}
+
+// Typography
+@mixin big() {
+  font-size: 2.125em;
+  line-height: 1.1;
+  font-weight: bold;
+  @include breakpoint(phablet) {
+    font-size: 1.65em;
+  }
+}
+
+@mixin medium() {
+  font-size: 1.75em;
+  line-height: 1.1;
+  font-weight: bold;
+  @include breakpoint(phablet) {
+    font-size: 1.5em;
+  }
+}
+
+@mixin small() {
+  font-size: 0.875em;
+}
+
+// --------------------------
+// Styles
+// --------------------------
+html {
+  height: 100%;
+  @include breakpoint(mindesktop) {
+    font-size: 131.25%;
+  }
+}
+
+body {
+  color: $black;
+  font-family: $body-font;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: $grey;
+  padding: $spacer;
+  min-height: calc(100% - #{$spacer * 2});
+  display: grid;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+// Poster - main grid
+.poster {
+  background: white;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr 1fr;
+  @include breakpoint(minphablet) {
+    grid-template-rows: 40vh 40vh auto;
+  }
+  @include breakpoint(minlaptop) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+// poster title and number
+.header {
+  color: white;
+  display: grid;
+  grid-template-columns: 68% auto;
+
+  &__title,
+  &__number {
+    padding: $spacer;
+  }
+
+  @include breakpoint(minphablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include breakpoint(minlaptop) {
+    grid-column: 1;
+    grid-row: 1 / span all;
+    background: #000;
+
+    &__title,
+    &__number {
+      grid-column: 1 / 3;
+    }
+  }
+
+  &__title {
+    background: $black;
+    @include big();
+  }
+
+  &__number {
+    background: $kav-red;
+    @include big();
+    display: block;
+    text-align: right;
+    @include breakpoint(minlaptop) {
+      text-align: left;
+    }
+  }
+}
+
+// --------------------------------
+// Album content
+// --------------------------------
+.album {
+  grid-column: 1;
+  align-self: flex-end;
+  grid-row: 2 / span all;
+  padding: $spacer;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: $spacer;
+  @include breakpoint(minlaptop) {
+    grid-column: 2;
+    grid-row: 1 / span all;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+  
+  // Album title
+  &__title {
+    @include medium();
+    margin-bottom: 1em;
+    @include breakpoint(minlaptop) {
+      text-align: right;
+      margin-bottom: 2em;
+    }
+  }
+  
+  // Release year
+  &__year {
+    display: block;
+    color: $kav-midBlue;
+  }
+  
+  // Track list
+  &__track-list {
+    grid-column: 1 / span 3;
+    @include breakpoint(minphablet) {
+      grid-column: 2 / span 2;
+      -webkit-columns: 2;
+      -moz-columns: 2;
+      columns: 2;
+      -webkit-column-gap: 3em;
+      -moz-column-gap: 3em;
+      column-gap: 3em;
+    }
+    @include breakpoint(minlaptop) {
+      columns: initial;
+    }
+  }
+  
+  &__track-item {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 0.1em 0;
+    font-weight: bold;
+  }
+  
+  &__track-title {
+    @include small();
+  }
+  
+  &__track-length {
+    color: $kav-midBlue;
+    @include small();
+    @include breakpoint(minlaptop) {
+      margin-left: 3em;
+    }
+  }
+}
+
+// --------------------------------
+// Triangles
+// --------------------------------
+.triangles {
+  grid-column: 1;
+  grid-row: 2;
+  align-self: stretch;
+  @include breakpoint(minlaptop) {
+    grid-column: 2 / 3;
+    grid-row: 1;
+    max-width: 100%;
+  }
+
+  // triangles for small screens
+  [class$="--small"] {
+    @include breakpoint(minphablet) {
+      display: none;
+    }
+  }
+
+  // triangles for medium screens
+  [class$="--medium"] {
+    display: none;
+    @include breakpoint(minphablet) {
+      display: initial;
+    }
+    @include breakpoint(minlaptop) {
+      display: none;
+    }
+  }
+
+  // triangles for jumbo screens
+  [class$="--jumbo"] {
+    grid-row: 1 / span all;
+    @include breakpoint(laptop) {
+      display: none;
+    }
+  }
+}
+
+.triangle-right {
+  fill: $kav-lightBlue;
+}
+
+.triangle-left {
+  fill: $kav-darkBlue;
+}
