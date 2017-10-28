@@ -32,57 +32,7 @@
             color: #29335C;
         }
 
-        .button2 {
-
-    --border: 4px solid #021971;
     
-    appearance: none;
-    position: relative;
-    padding: 0;
-    background: transparent;
-    text-transform: uppercase;
-    letter-spacing: .2em;
-    outline: none;
-    cursor: pointer;
-    font-weight: bold;
-    border-radius: 0;
-    border: none;
-    
-    span {
-        display: block;
-        position: relative;
-        padding: 1.4em 4em;
-        background: #1641BC;
-        color: white;
-        border: var(--border);
-        transition: transform .2s ease;
-        z-index: 1;
-        will-change: transform;
-    }
-    
-    &::after {
-        content: '';
-        position: absolute;
-        top: 6px;
-        left: 6px;
-        width: calc(100% - 5px);
-        height: calc(100% - 5px);
-        background: white;
-        border: var(--border);
-    }
-    
-    &:hover span {
-        transform: translate(-3px, -3px);
-    }
-    
-    &:active span {
-        transition: transform .05s ease;
-        transform: translate(0, 0);
-    }
-
-}
-
-/* <!-- up to here -->*/
 
         button {
             font-family: sans-serif;
@@ -126,7 +76,7 @@
 
 
 
-<button2 class="button2" id="shuffler">collaborate</button2>
+<button id="shuffler">collaborate</button>
 </article>
 <script>
         function WordShuffler(holder, opt) {
