@@ -28,7 +28,7 @@
         }
 
         .paragraph{
-            font-size: 1.0em;
+            font-size: 0.7em;
             color: #29335C;
         }
 
@@ -289,19 +289,19 @@
 
         var headText = new WordShuffler(headline, {
             textColor: '#fff',
-            timeOffset: 9,
+            timeOffset: 2,
             mixCapital: true,
             mixSpecialCharacters: true
         });
 
         var pText = new WordShuffler(text, {
             textColor: '#fff',
-            timeOffset: 2
+            timeOffset: 5
         });
 
         var buttonText = new WordShuffler(shuffler, {
             textColor: 'tomato',
-            timeOffset: 15
+            timeOffset: 10
         });
 
         shuffler.addEventListener('click', function() {
