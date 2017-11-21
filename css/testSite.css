@@ -1,0 +1,351 @@
+@font-face {
+    font-family: 'Flama';
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/Flama-Medium.woff") format("woff")
+}
+
+@font-face {
+    font-family: 'Flama';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Flama-Book.woff") format("woff")
+}
+
+html {
+    box-sizing: border-box
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit
+}
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+section {
+    display: block
+}
+
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects
+}
+
+a:active,
+a:hover {
+    outline-width: 0
+}
+
+img {
+    border-style: none
+}
+
+svg:not(:root) {
+    overflow: hidden;
+    max-width: 100%
+}
+
+[hidden] {
+    display: none
+}
+
+html {
+    font-family: "Flama", "Trebuchet MS", helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.4
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    html {
+        font-size: calc(2vw + 2px)
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    html {
+        font-size: calc(2vw + 4px)
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    html {
+        font-size: 22px
+    }
+}
+
+body {
+    overflow-x: hidden;
+    padding-top: 25vh
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        padding-top: 15vh
+    }
+}
+
+a {
+    color: #85c3d7;
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+strong {
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 0.95em;
+    letter-spacing: 0.02em
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto
+}
+
+blockquote {
+    margin: 0 0 0.5em;
+    quotes: "“" "”";
+    text-indent: -0.4em
+}
+
+blockquote:before {
+    content: open-quote
+}
+
+blockquote:after {
+    content: close-quote
+}
+
+.Header {
+    position: fixed;
+    top: 10vh;
+    left: 5%;
+    z-index: 29
+}
+
+@media only screen and (max-width: 600px) {
+    .Header {
+        background-color: white;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 5vh 5%
+    }
+}
+
+.Header h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1;
+    text-transform: uppercase
+}
+
+.Rellax {
+    transition: transform 1.5s cubic-bezier(0, 1, 0.5, 1)
+}
+
+.Screen {
+    position: relative
+}
+
+.Screen_fore {
+    position: absolute
+}
+
+.Screen_fore.Text {
+    z-index: 27
+}
+
+.Screen_fore.photo {
+    z-index: 10
+}
+
+.intro {
+    min-height: 50vh
+}
+
+.intro .Screen_back {
+    display: flex;
+    justify-content: center;
+    padding: 0 10%
+}
+
+.intro .Screen_fore {
+    position: static;
+    max-width: 25em;
+    padding-top: 4em;
+    letter-spacing: 0.08em
+}
+
+.outro {
+    height: 100vh;
+    width: 100vw;
+    left: -10vw;
+    background-color: white;
+    z-index: 28
+}
+
+.outro .Screen_back {
+    padding: 30vh 10% 0
+}
+
+.outro .Screen_fore {
+    position: static;
+    width: 100%;
+    max-width: 30em;
+    margin: 2em auto;
+    letter-spacing: 0.06em
+}
+
+.outro .Screen_fore a {
+    text-transform: uppercase
+}
+
+.we_explore {
+    height: 40vw
+}
+
+.we_explore .Screen_fore.Text {
+    top: 20vw;
+    right: 10%
+}
+
+.we_explore .Screen_fore.photo {
+    top: 5vw;
+    left: -10%;
+    width: 80%
+}
+
+.we_discover {
+    height: 40vw
+}
+
+.we_discover .Screen_fore.Text {
+    top: 20vw;
+    left: 5%
+}
+
+.we_discover .Screen_fore.photo {
+    top: 2vw;
+    right: 5%;
+    width: 50%
+}
+
+.we_create {
+    height: 40vw
+}
+
+.we_create .Screen_fore.Text {
+    top: 15vw;
+    right: 10%
+}
+
+.we_create .Screen_fore.photo {
+    right: -5%;
+    width: 70%
+}
+
+.we_evolve {
+    height: 40vw
+}
+
+.we_evolve .Screen_fore.Text {
+    top: 15vw;
+    left: 0;
+    right: 0
+}
+
+.we_evolve .Screen_fore.photo {
+    top: -5vw;
+    left: -10%;
+    width: 60%
+}
+
+.we_build_worlds {
+    height: 50vw
+}
+
+.we_build_worlds .Screen_fore.Text {
+    left: 0;
+    right: 0;
+    top: 17vw
+}
+
+.we_build_worlds .Screen_fore.photo {
+    top: 0;
+    left: -10vw;
+    right: -10vw
+}
+
+.we_build_worlds .Screen_fore.photo img,
+.we_build_worlds .Screen_fore.photo video {
+    width: 100%;
+    max-width: none;
+    height: auto
+}
+
+@media only screen and (max-width: 600px) {
+    .Screen {
+        height: auto;
+        border-bottom: 1em solid white
+    }
+    .Screen .Screen_fore.Text {
+        font-size: 180%
+    }
+    .Screen .Screen_fore.photo {
+        position: static;
+        transform: none !important;
+        width: 100%
+    }
+    .Screen .Screen_fore.photo img {
+        width: 100%
+    }
+    .Screen.intro {
+        padding-bottom: 3em;
+        border-bottom-width: 4em
+    }
+    .Screen.outro {
+        position: static;
+        width: auto;
+        height: 90vh
+    }
+    .Screen.outro .Screen_back {
+        padding: 10vh 0
+    }
+}
+
+.Scroll {
+    margin: 0 auto;
+    width: 80%;
+    background-color: #b3d9e5
+}
+
+@media only screen and (max-width: 600px) {
+    .Scroll {
+        width: 90%
+    }
+}
+
+.Text {
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 3em;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.05em
+}
