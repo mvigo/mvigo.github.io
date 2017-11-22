@@ -20,11 +20,14 @@
 
 <div class='Header'>
     <h1 id="headline">Welcome to 4000.</h1>
-    <p id="text">An experimental innovation and design unit.</p>
+</div>
+<div class='Scroll'>
+
+<div>
+  
+   <p id="text">An experimental innovation and design unit.</p>  
 </div>
 
-<div class='Scroll'>
-    
     <div class="Screen intro">
         <div class="Screen_back">
             <p class="Screen_fore">                
@@ -40,7 +43,7 @@
             </div>
         </div>
     </div>
-<!--
+
     <div class="Screen we_discover">
         <div class="Screen_back">
             <div class="Screen_fore Rellax Text" data-rellax-percentage="0.5" data-rellax-speed="8">We discover</div>
@@ -50,6 +53,7 @@
         </div>
     </div>
     
+<!--    
     <div class="Screen we_create">
         <div class="Screen_back">
             <div class="Screen_fore Rellax Text" data-rellax-percentage="0.5" data-rellax-speed="8">We create</div>
@@ -307,14 +311,14 @@
 
         var headText = new WordShuffler(headline, {
             textColor: '#000',
-            timeOffset: 3,
+            timeOffset: 4,
             mixCapital: true,
             mixSpecialCharacters: true
         });
 
         var pText = new WordShuffler(text, {
             textColor: '#000',
-            timeOffset: 5,
+            timeOffset: 4,
         });
 
         var buttonText = new WordShuffler(shuffler, {
