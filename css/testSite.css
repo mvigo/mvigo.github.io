@@ -1,73 +1,3 @@
-// Colors
-$grey: #cdcdcd;
-$black: #212121;
-$kav-red: #d84445;
-$kav-darkBlue: #084259;
-$kav-midBlue: #027ca9;
-$kav-lightBlue: #78c1d7;
-
-// --------------------------------
-// Triangles
-// --------------------------------
-.triangles {
-  grid-column: 1;
-  grid-row: 2;
-  align-self: stretch;
-  @include breakpoint(minlaptop) {
-    grid-column: 2 / 3;
-    grid-row: 1;
-    max-width: 100%;
-  }
-
-  // triangles for small screens
-  [class$="--small"] {
-    @include breakpoint(minphablet) {
-      display: none;
-    }
-  }
-
-  // triangles for medium screens
-  [class$="--medium"] {
-    display: none;
-    @include breakpoint(minphablet) {
-      display: initial;
-    }
-    @include breakpoint(minlaptop) {
-      display: none;
-    }
-  }
-
-  // triangles for jumbo screens
-  [class$="--jumbo"] {
-    grid-row: 1 / span all;
-    @include breakpoint(laptop) {
-      display: none;
-    }
-  }
-}
-
-.triangle-right {
-  fill: $kav-lightBlue;
-}
-
-.triangle-left {
-  fill: $kav-darkBlue;
-}
-
-// Poster - main grid
-.poster {
-  background: white;
-  display: grid;
-  grid-template-rows: auto 1fr 1fr;
-  @include breakpoint(minphablet) {
-    grid-template-rows: 40vh 40vh auto;
-  }
-  @include breakpoint(minlaptop) {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-  }
-}
-
 @font-face {
     font-family: 'Flama';
     font-style: normal;
@@ -419,3 +349,4 @@ blockquote:after {
     text-transform: uppercase;
     letter-spacing: 0.05em
 }
+
