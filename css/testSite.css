@@ -46,6 +46,19 @@
   fill: $kav-darkBlue;
 }
 
+// Poster - main grid
+.poster {
+  background: white;
+  display: grid;
+  grid-template-rows: auto 1fr 1fr;
+  @include breakpoint(minphablet) {
+    grid-template-rows: 40vh 40vh auto;
+  }
+  @include breakpoint(minlaptop) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
 
 @font-face {
     font-family: 'Flama';
