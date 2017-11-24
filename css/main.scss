@@ -112,7 +112,7 @@ $baseurl: '{{ site.baseurl }}/images';
 
 	h1, {
 		color: _palette(fg-bold);
-		font-family: Arial, Helvetica, sans-serif
+		font-family: Arial, Helvetica, sans-serif;
 		font-weight: _font(weight-extrabold);
 		letter-spacing: _size(letter-spacing-alt);
 		line-height: 1em;
