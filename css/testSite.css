@@ -168,9 +168,9 @@ blockquote:after {
 
 .Screen_fore2 {
     position: absolute
-    font-weight: 200;
+    color: white
+    font-weight: 200
 }
-
 
 
 .Screen_fore.Text {
