@@ -167,7 +167,7 @@ blockquote:after {
 }
 
 .Screen_fore_two {
-    position: absolute
+    z-index: 27
     color: #85c3d7;
 }
 
