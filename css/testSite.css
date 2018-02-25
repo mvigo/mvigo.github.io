@@ -166,6 +166,13 @@ blockquote:after {
     position: absolute
 }
 
+.Screen_fore2 {
+    position: absolute
+    font-weight: 200;
+}
+
+
+
 .Screen_fore.Text {
     z-index: 27
 }
