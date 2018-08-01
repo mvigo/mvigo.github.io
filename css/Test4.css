@@ -85,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #3DB4B9;
+  color: #4D7EA8;
   text-decoration: none;
   transition: color 0.12s linear; }
   a:hover {
@@ -292,7 +292,7 @@ pre {
     width: 50vw; } }
 .home .home-content {
   padding: 120px 60px;
-  color: #4D7EA8; }
+  color: #2B303A; }
   @media screen and (max-width: 600px) {
     .home .home-content {
       padding: 30px 20px; } }
@@ -330,7 +330,7 @@ pre {
   .home .home-content .bigLink, .home .home-content .bigLink:visited,
   .home .home-content td a,
   .home .home-content td a:visited {
-    color: #4D7EA8; }
+    color: #2B303A; }
   .home .home-content .bigLink:hover,
   .home .home-content td a:hover {
     border-bottom: 1px solid #CEECD2; }
