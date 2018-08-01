@@ -292,7 +292,7 @@ pre {
     width: 50vw; } }
 .home .home-content {
   padding: 120px 60px;
-  color: #00A522; }
+  color: #4D7EA8; }
   @media screen and (max-width: 600px) {
     .home .home-content {
       padding: 30px 20px; } }
@@ -330,7 +330,7 @@ pre {
   .home .home-content .bigLink, .home .home-content .bigLink:visited,
   .home .home-content td a,
   .home .home-content td a:visited {
-    color: #00A522; }
+    color: #4D7EA8; }
   .home .home-content .bigLink:hover,
   .home .home-content td a:hover {
     border-bottom: 1px solid #CEECD2; }
