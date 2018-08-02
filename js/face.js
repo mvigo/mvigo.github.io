@@ -8,8 +8,8 @@ new BreathingHalftone( img, {
   oscPeriod: 2,
   channels: [ 'lum' ],
   friction: 0.25,
-  hoverDiameter: 0.3.5,
-  hoverForce: -0.004,
-  activeDiameter: 0.4,
+  hoverDiameter: 0.4,
+  hoverForce: 0.004,
+  activeDiameter: -0.4,
   activeForce: 0.004
 });

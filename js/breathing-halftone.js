@@ -340,7 +340,7 @@ Halftone.defaults = {
   hoverDiameter: 0.3,
   hoverForce: -0.02,
   activeDiameter: 0.6,
-  activeForce: -0.01
+  activeForce: 0.01
 };
 
 function makeCanvasAndCtx() {
@@ -848,4 +848,3 @@ window.BreathingHalftone = Halftone;
 
 
 })( window );
-
