@@ -323,7 +323,7 @@ pre {
   .home .home-content .bigLink:after,
   .home .home-content td a:after {
     content: '❯';
-    color: #99DBA7;
+    color: #4D7EA8;
     font-size: 11px;
     display: inline-block;
     margin-left: 5px; }
@@ -333,14 +333,14 @@ pre {
     color: #2B303A; }
   .home .home-content .bigLink:hover,
   .home .home-content td a:hover {
-    border-bottom: 1px solid #CEECD2; }
+    border-bottom: 1px solid #4D7EA8; }
   .home .home-content .link-caret {
-    color: #CEECD2;
+    color: #4D7EA8;
     font-size: 11px; }
   .home .home-content .elsewhere-list {
     width: 100%;
     border: 0px;
-    border-top: 1.5px solid #D64933;
+    border-top: 1.25px solid #4D7EA8;
     padding-top: 10px;
     border-spacing: 0; }
     .home .home-content .elsewhere-list td {
