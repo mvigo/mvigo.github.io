@@ -340,7 +340,7 @@ pre {
   .home .home-content .elsewhere-list {
     width: 100%;
     border: 0px;
-    border-top: 1px solid #CEECD2;
+    border-top: 1.5px solid #D64933;
     padding-top: 10px;
     border-spacing: 0; }
     .home .home-content .elsewhere-list td {
