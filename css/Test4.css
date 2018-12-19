@@ -304,8 +304,9 @@ pre {
   .home .home-content .label,
   .home .home-content h2 {
     display: block;
-    font-size: 14px;
-    letter-spacing: 0.5px;
+    font-size: 12px;
+    font-weight: 350;
+    letter-spacing: 0.3px;
     text-transform: uppercase;
     color: #0A2447; }
   .home .home-content h2 {
