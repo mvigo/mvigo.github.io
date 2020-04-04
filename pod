@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+  	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-84265481-1"></script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)};
+  gtag('js', new Date());
+
+  gtag('config', 'UA-84265481-1');
+</script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Manuel Vigo</title>
+  <meta name="description" content="I focus on human-centered ideas.">
+
+  <link rel="stylesheet" href="/css/Test4.css">
+   
+</head>
+
+
+  <body>
+
+    <div class='home'>
+
+  <div class='dot-tone-portrait'>
+    <img src='css/images/face-bw.jpg'/>
+  </div>
+
+
+
+  <div class='home-content'>
+    <h1>Hello!</h1>
+      <br>
+      <p>This is a space for some recordings.</p>
+
+                <p>Episode 1:</p> 
+
+<br>
+
+<div>
+ <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/18400901&color=%23d500f2&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>              
+
+</div>
+    <br>
+    <h2>Previous Projects</h2>
+    
+
+    <table class='elsewhere-list'>
+      <tbody>
+      
+      </tbody>
+    </table>
+
+    <br>
+    <h2>Media</h2>
+    <table class='elsewhere-list'>
+      </table>
+
+ 
+
+    <br>
+    <h2>Reach Out</h2>
+    	<table class='elsewhere-list'>
+    	</table>
+
+   <p> Feel free to drop me a line: manuel  @  tacutacu.pe </p>
+
+  
+
+  </div>
+
+<div>
+<table class='elsewhere-list'>
+	    	<tr>
+	          <td><a href="</a></td>
+	        </tr>
+	        <tr>
+	          <td><a href="">LinkedIn</a></td>
+	        </tr>
+    	</table>
+
+ </div>
+</div>
+	<script type='text/javascript'>
+    if (document.documentElement.clientWidth > 600) {
+      document.body.appendChild(document.createElement("script")).src = '/js/breathing-halftone.js';
+      document.body.appendChild(document.createElement("script")).src = '/js/face.js'; 
+
+    }
+  </script>			
+
+<script>
+   window.onload = function() {
+      functionFromAJS();
+   };
+</script>
+
+  </body>
+
+
+</html>
+
+ 
