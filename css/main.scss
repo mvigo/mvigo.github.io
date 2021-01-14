@@ -9,6 +9,7 @@ $baseurl: '{{ site.baseurl }}/images';
 @import 'libs/mixins';
 @import 'font-awesome.min.css';
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic');
+@import "compass/css3";
 
 /*
 	Spectral by HTML5 UP
@@ -210,8 +211,7 @@ $baseurl: '{{ site.baseurl }}/images';
 	}
 
 /* glitch */ 
-	@import "compass/css3";
-
+	
 	body{
 	  background:black;
 	  font-family: 'Varela', sans-serif;
