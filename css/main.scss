@@ -209,7 +209,7 @@ $baseurl: '{{ site.baseurl }}/images';
 		text-align: right;
 	}
 
-/* compass */ 
+/* glitch */ 
 	@import "compass/css3";
 
 	body{
@@ -218,7 +218,7 @@ $baseurl: '{{ site.baseurl }}/images';
 	}
 
 	.glitch{
-	  color:white;
+	  color:black;
 	  font-size:100px;
 	  position:relative;
 	  width:400px;
@@ -238,8 +238,8 @@ $baseurl: '{{ site.baseurl }}/images';
 	  left:2px;
 	  text-shadow:-1px 0 red;
 	  top:0;
-	  color:white;
-	  background:black;
+	  color:black;
+	  background:white;
 	  overflow:hidden;
 	  clip:rect(0,900px,0,0); 
 	  animation:noise-anim 2s infinite linear alternate-reverse;
@@ -259,8 +259,8 @@ $baseurl: '{{ site.baseurl }}/images';
 	  left:-2px;
 	  text-shadow:1px 0 blue; 
 	  top:0;
-	  color:white;
-	  background:black;
+	  color:black;
+	  background:white;
 	  overflow:hidden;
 	  clip:rect(0,900px,0,0); 
 	  animation:noise-anim-2 3s infinite linear alternate-reverse;
