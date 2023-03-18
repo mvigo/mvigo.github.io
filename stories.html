@@ -29,6 +29,8 @@
     }
     #result {
       margin-top: 20px;
+      opacity: 0;
+      transition: opacity 0.5s;
     }
     h1 {
       font-size: 2em;
@@ -50,54 +52,27 @@
       padding: 20px;
       box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     }
-    canvas {
-      display: block;
-      margin-bottom: 20px;
-    }
   </style>
 </head>
 <body>
   <div class="content">
-    <canvas id="abstractArt" width="600" height="300"></canvas>
     <button id="apiButton">Tell me a story</button>
     <div id="result"></div>
   </div>
   <script>
-    class OrganicShape {
-      constructor(x, y, numSides, size) {
-        this.x = x;
-        this.y = y;
-        this.numSides = numSides;
-        this.size = size;
-        this.angle = 0;
-        this.speed = Math.random() * 0.05 - 0.025;
-      }
-
-      draw(ctx) {
-        ctx.beginPath();
-        ctx.moveTo(this.x + this.size * Math.cos(this.angle), this.y + this.size * Math.sin(this.angle));
-        for (let i = 1; i <= this.numSides; i++) {
-          const angle = (i / this.numSides) * 2 * Math.PI + this.angle;
-          ctx.lineTo(this.x + this.size * Math.cos(angle), this.y + this.size * Math.sin(angle));
-        }
-        ctx.closePath();
-        ctx.lineWidth = 1;
-        ctx.strokeStyle = 'black';
-        ctx.stroke();
-      }
-
-      update() {
-        this.angle += this.speed;
-      }
-    }
-
-    function drawAbstractArt() {
-      const canvas = document.getElementById('abstractArt');
-      const ctx = canvas.getContext('2d');
-      const width = canvas.width;
-      const height = canvas.height;
-      const shapes = [];
-
-      for (let i = 0; i < 10; i++) {
-        const x = Math.random() * width;
-        const y = Math.random
+    document.getElementById('apiButton').addEventListener('click', async () => {
+      const response = await fetch('https://shortstories-api.onrender.com/');
+      const data = await response.json();
+      const title = data.title;
+      const author = data.author;
+      const story = data.story;
+      document.getElementById('result').innerHTML = `
+        <h1>${title}</h1>
+        <h2>${author}</h2>
+        <p>${story}</p>
+      `;
+      document.getElementById('result').style.opacity = 1;
+    });
+  </script>
+</body>
+</html>
