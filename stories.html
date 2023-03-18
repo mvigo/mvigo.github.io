@@ -21,7 +21,8 @@
       color: white;
       border: none;
       cursor: pointer;
-      border-radius: 50%;
+      border-radius: 10px;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     }
     button:hover {
       background-color: #6b6b6b;
@@ -49,17 +50,38 @@
       padding: 20px;
       box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     }
+    canvas {
+      display: block;
+      margin-bottom: 20px;
+    }
   </style>
 </head>
 <body>
   <div class="content">
+    <canvas id="abstractArt" width="600" height="300"></canvas>
     <button id="apiButton">Tell me a story</button>
     <div id="result"></div>
   </div>
   <script>
-    function setButtonShape() {
-      const borderRadius = Math.floor(Math.random() * 51);
-      document.getElementById('apiButton').style.borderRadius = `${borderRadius}%`;
+    function drawAbstractArt() {
+      const canvas = document.getElementById('abstractArt');
+      const ctx = canvas.getContext('2d');
+      const width = canvas.width;
+      const height = canvas.height;
+      
+      ctx.fillStyle = 'white';
+      ctx.fillRect(0, 0, width, height);
+
+      const numShapes = 10;
+      
+      for (let i = 0; i < numShapes; i++) {
+        ctx.beginPath();
+        ctx.moveTo(Math.random() * width, Math.random() * height);
+        ctx.lineTo(Math.random() * width, Math.random() * height);
+        ctx.lineWidth = 1 + Math.random() * 4;
+        ctx.strokeStyle = 'black';
+        ctx.stroke();
+      }
     }
 
     document.getElementById('apiButton').addEventListener('click', async () => {
@@ -75,7 +97,7 @@
       `;
     });
 
-    setButtonShape();
+    drawAbstractArt();
   </script>
 </body>
 </html>
