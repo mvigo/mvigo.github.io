@@ -292,7 +292,7 @@ pre {
     width: 50vw; } }
 .home .home-content {
   padding: 120px 60px;
-  color: #2B303A; }
+  color: #e8e8e8; }
   @media screen and (max-width: 600px) {
     .home .home-content {
       padding: 30px 20px; } }
@@ -308,7 +308,7 @@ pre {
     font-weight: bold;
     letter-spacing: 0.3px;
     text-transform: uppercase;
-    color: #0A2447; }
+    color: #e8e8e8; }
   .home .home-content h2 {
     margin-top: 45px; }
   .home .home-content .bigspan {
@@ -324,19 +324,19 @@ pre {
   .home .home-content .bigLink:after,
   .home .home-content td a:after {
     content: '❯';
-    color: #4D7EA8;
+    color: ##e8e8e8;
     font-size: 11px;
     display: inline-block;
     margin-left: 5px; }
   .home .home-content .bigLink, .home .home-content .bigLink:visited,
   .home .home-content td a,
   .home .home-content td a:visited {
-    color: #2B303A; }
+    color: #e8e8e8; }
   .home .home-content .bigLink:hover,
   .home .home-content td a:hover {
     border-bottom: 1px solid #4D7EA8; }
   .home .home-content .link-caret {
-    color: #4D7EA8;
+    color: #e8e8e8;
     font-size: 11px; }
   .home .home-content .elsewhere-list {
     width: 100%;
