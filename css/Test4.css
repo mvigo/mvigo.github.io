@@ -31,7 +31,7 @@ dl, dd, ol, ul, figure {
  */
 body {
   font: 400 14px/1.4 "MaisonNeue", -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #111;
+  color: #fdfdfd;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
