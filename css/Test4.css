@@ -24,7 +24,8 @@ body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background-color: #808080; /* Gray background color */ }
 
 /**
  * Basic styling
@@ -292,7 +293,9 @@ pre {
     width: 50vw; } }
 .home .home-content {
   padding: 120px 60px;
-  color: #e8e8e8; }
+  color: #e8e8e8; 
+    background-color: #808080; /* Gray background color */
+  }
   @media screen and (max-width: 600px) {
     .home .home-content {
       padding: 30px 20px; } }
