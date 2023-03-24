@@ -49,6 +49,7 @@ class PantoneGameOfLife {
                 }
             }
         }
+    }
 
     update() {
         let newGrid = this.createGrid();
