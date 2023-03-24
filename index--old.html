@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+  	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-84265481-1"></script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)};
+  gtag('js', new Date());
+
+  gtag('config', 'UA-84265481-1');
+
+</script>
+
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Manuel Vigo</title>
+  <meta name="description" content="ideas">
+
+  <link rel="stylesheet" href="/css/Test4.css">
+   
+</head>
+
+
+  <body>
+<canvas id="gameCanvas" style="position: absolute; z-index: -1;"></canvas>
+<script src="/gameOfLife.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const canvas = document.getElementById('gameCanvas');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        const game = new GameOfLife(canvas);
+        game.randomizeGrid();
+
+        function update() {
+            game.draw();
+            game.update();
+            requestAnimationFrame(update);
+        }
+
+        update();
+    });
+</script>
+    <div class='home'>
+
+  <div class='dot-tone-portrait'>
+    <img src='css/images/face-bw.jpg'/>
+  </div>
+
+
+
+  <div class='home-content'>
+    <h1>Hello!</h1>
+      <br>
+      <p>My name is Manuel</p>
+	  
+
+         <!--        <p> I focus on human-centered ideas. You can check out some of my work below. </p> 
+
+                <p> I have a Masters in Design Management from IED Barcelona, and a BA in International Relations and Philosophy from FIU.</p> 
+                
+                <p>This is a <a href="https://mvigo.github.io/SiteInfo.html"target="_blank">small site</a> where I post current and past projects.</p>
+
+                <p>In my past life I was a journalist. You can read some of my published work <a href="https://mvigo.github.io/published.html" target="_blank">here</a>.</p>
+ -->
+
+
+    <!-- <br>
+    <h2>Previous Projects</h2>
+    
+
+    <table class='elsewhere-list'>
+      <tbody>
+        <tr>
+          <td><a href="http://ideasquare.web.cern.ch/content/other-side-innovation"target="_blank">CERN</a></td>
+          <td>Geneva</td>
+        </tr>
+        <tr>
+          <td><a href="https://mvigo.github.io/KonicaMinolta.html">Konica Minolta</a></td>
+          <td>Barcelona/London</td>
+        </tr>
+        <tr>
+          <td><a href="https://nextcity.org/informalcity/city/lima"target="_blank">Rockefeller Foundation's Informal City Dialogues</a></td>
+          <td>Lima</td>
+        </tr>
+        <tr>
+          <td>Ferrino</td>
+          <td>Torino</td>
+        </tr>
+         <tr>
+          <td>Personalized Travel</td>
+          <td>Lima</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br>
+    <h2>Media</h2>
+    <table class='elsewhere-list'>
+      </table>
+
+    <p>2018 - Interviewed for IED Barcelona's <a href="https://iedbarcelona.es/en/noticias-info/fifteen-fifty-book-preview/">Fifteen for Fifty</a> anniversary book, profiling 50 designers from IED's past 15 years.</p>
+
+    <p>2016 - My work was showcased at the <a href="https://issuu.com/ghierraintendente/docs/cat--logo-bid16">Iberoamerican Biennale of Design.</a> </p>
+
+    <p>2015 - My work in the travel industry was featured in <a href="https://perudesignnet.com">Peru Design Net</a>, a design conference celeberating innovative ideas. This also led showcasing our work at the Pacific Alliance's <a href="https://alianzapacifico.net/en/?s=lab+4">Lab 4+</a> Innovation Forum.</p>
+
+
+ -->
+  <br>
+    <h2>Reach Out</h2>
+    	<table class='elsewhere-list'>
+    	</table>
+
+<!-- 
+    <p> What I am up to <strong> <a href="https://mvigo.github.io/now.html">now</a> </strong> </p>
+
+    <p> <a href="http://twitter.com/manuelvigo"target="_blank">@manuelvigo</a> </strong> </p>
+	  
+	   -->
+
+    <p> <a href="https://www.linkedin.com/in/manuelvigo/"target="_blank">LinkedIn</a> </strong> </p>
+
+  </div>
+
+<div>
+<table class='elsewhere-list'>
+	    	<tr>
+	          <td><a href="</a></td>
+	        </tr>
+	        <tr>
+	
+	        </tr>
+    	</table>
+
+ </div>
+</div>
+	<script type='text/javascript'>
+    if (document.documentElement.clientWidth > 600) {
+      document.body.appendChild(document.createElement("script")).src = '/js/breathing-halftone.js';
+      document.body.appendChild(document.createElement("script")).src = '/js/face.js'; 
+
+    }
+  </script>			
+
+<script>
+   window.onload = function() {
+      functionFromAJS();
+   };
+</script>
+
+  </body>
+
+
+</html>
+
+ 

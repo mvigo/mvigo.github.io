@@ -71,19 +71,55 @@ class GameOfLife {
         return count;
     }
 
-    run() {
+ run() {
+        // Check if the canvas dimensions have changed
+        if (this.canvas.width !== this.columns * this.cellSize || this.canvas.height !== this.rows * this.cellSize) {
+            this.columns = Math.floor(this.canvas.width / this.cellSize);
+            this.rows = Math.floor(this.canvas.height / this.cellSize);
+            this.grid = this.createGrid();
+            this.randomizeGrid();
+        }
+
         this.update();
         this.draw();
         requestAnimationFrame(() => this.run());
     }
 }
 
-window.addEventListener('load', () => {
-    const canvas = document.getElementById('gameCanvas');
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+function initGameOfLife(targetElement) {
+    const canvas = document.createElement('canvas');
+    canvas.width = targetElement.clientWidth;
+    canvas.height = targetElement.clientHeight;
+    canvas.style.position = 'absolute';
+    canvas.style.top = '0';
+    canvas.style.left = '0';
+    canvas.style.zIndex = '-1'; // Ensure the canvas stays behind the content
+    canvas.style.width = '100%'; // Add this line
+    canvas.style.height = '100%'; // Add this line
+
+    targetElement.appendChild(canvas);
 
     const gameOfLife = new GameOfLife(canvas);
     gameOfLife.randomizeGrid();
     gameOfLife.run();
-});
+
+    // Add a resize event listener to update canvas dimensions
+    window.addEventListener('resize', () => {
+        canvas.width = targetElement.clientWidth;
+        canvas.height = targetElement.clientHeight;
+    });
+}
+
+
+
+
+
+// window.addEventListener('load', () => {
+//     const canvas = document.getElementById('gameCanvas');
+//     canvas.width = window.innerWidth;
+//     canvas.height = window.innerHeight;
+
+//     const gameOfLife = new GameOfLife(canvas);
+//     gameOfLife.randomizeGrid();
+//     gameOfLife.run();
+// });
