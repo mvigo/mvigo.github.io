@@ -1,5 +1,5 @@
-class GameOfLife {
-    constructor(canvas, cellSize = 1) {
+class PantoneGameOfLife {
+    constructor(canvas, cellSize = 10) {
         this.canvas = canvas;
         this.ctx = canvas.getContext('2d');
         this.cellSize = cellSize;
@@ -24,24 +24,34 @@ class GameOfLife {
         }
     }
 
-  draw() {
-    this.ctx.fillStyle = 'rgba(0, 0, 0, 0.2)';
-    this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+    draw() {
+        // Choose a random color from the Pantone-inspired color palette
+        const colors = [
+            'rgba(0, 255, 255, 0.2)',
+            'rgba(57, 255, 20, 0.2)',
+            'rgba(255, 105, 180, 0.2)',
+            'rgba(255, 0, 0, 0.2)',
+            'rgba(255, 165, 0, 0.2)',
+            'rgba(255, 255, 0, 0.2)',
+            'rgba(128, 0, 128, 0.2)',
+            'rgba(192, 192, 192, 0.2)',
+        ];
+        const randomColor = colors[Math.floor(Math.random() * colors.length)];
 
-    for (let i = 0; i < this.columns; i++) {
-        for (let j = 0; j < this.rows; j++) {
-            if (this.grid[i][j]) {
-                // Use a dynamic color inspired by Pantone's palette based on the cell's position
-                const hue = (i + j) % 360;
-                this.ctx.fillStyle = `hsl(${hue}, 100%, 50%)`;
-                this.ctx.fillRect(i * this.cellSize, j * this.cellSize, this.cellSize, this.cellSize);
+        this.ctx.fillStyle = randomColor;
+        this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+
+        this.ctx.fillStyle = '#FFF';
+        for (let i = 0; i < this.columns; i++) {
+            for (let j = 0; j < this.rows; j++) {
+                if (this.grid[i][j]) {
+                    this.ctx.fillRect(i * this.cellSize, j * this.cellSize, this.cellSize, this.cellSize);
+                }
             }
         }
-    }
-}
 
 
-    update() {
+ update() {
         let newGrid = this.createGrid();
 
         for (let i = 0; i < this.columns; i++) {
@@ -89,22 +99,41 @@ class GameOfLife {
     }
 }
 
-function initGameOfLife(targetElement) {
+        // Add custom functions for generating geometric shapes, patterns, and typography
+        this.drawGeometricShapes();
+        this.drawPatterns();
+        this.drawTypography();
+    }
+
+    drawGeometricShapes() {
+        // Implement your custom function to draw geometric shapes inspired by Pantone's style
+    }
+
+    drawPatterns() {
+        // Implement your custom function to draw Op Art patterns inspired by Pantone's style
+    }
+
+    drawTypography() {
+        // Implement your custom function to draw bold and futuristic typography inspired by Pantone's style
+    }
+}
+
+function initPantoneGameOfLife(targetElement) {
     const canvas = document.createElement('canvas');
     canvas.width = targetElement.clientWidth;
     canvas.height = targetElement.clientHeight;
     canvas.style.position = 'absolute';
     canvas.style.top = '0';
     canvas.style.left = '0';
-    canvas.style.zIndex = '-1'; // Ensure the canvas stays behind the content
-    canvas.style.width = '100%'; // Add this line
-    canvas.style.height = '100%'; // Add this line
+    canvas.style.zIndex = '-1';
+    canvas.style.width = '100%';
+    canvas.style.height = '100%';
 
     targetElement.appendChild(canvas);
 
-    const gameOfLife = new GameOfLife(canvas);
-    gameOfLife.randomizeGrid();
-    gameOfLife.run();
+    const pantoneGameOfLife = new PantoneGameOfLife(canvas);
+    pantoneGameOfLife.randomizeGrid();
+    pantoneGameOfLife.run();
 
     // Add a resize event listener to update canvas dimensions
     window.addEventListener('resize', () => {
@@ -112,17 +141,3 @@ function initGameOfLife(targetElement) {
         canvas.height = targetElement.clientHeight;
     });
 }
-
-
-
-
-
-// window.addEventListener('load', () => {
-//     const canvas = document.getElementById('gameCanvas');
-//     canvas.width = window.innerWidth;
-//     canvas.height = window.innerHeight;
-
-//     const gameOfLife = new GameOfLife(canvas);
-//     gameOfLife.randomizeGrid();
-//     gameOfLife.run();
-// });

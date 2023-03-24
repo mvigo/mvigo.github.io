@@ -2,20 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Felipe Pantone's Game of Life</title>
-    <link rel="stylesheet" href="pantone.css">
+    <title>Pantone-Inspired Autogenerative Artwork</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        #container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+        }
+
+        #artworkCanvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    </style>
 </head>
 <body>
-    <div id="gameContainer">
-        <div class="pantone-overlay"></div>
+    <div id="container">
+        <canvas id="artworkCanvas"></canvas>
     </div>
-    <script src="pantoneOfLife.js"></script>
-    <script>
-        window.addEventListener('load', () => {
-            const gameContainer = document.getElementById('gameContainer');
-            initGameOfLife(gameContainer);
-        });
-    </script>
+
+    <!-- Include the JavaScript file here -->
+ <script src="pantoneOfLife.js"></script> 
 </body>
 </html>
