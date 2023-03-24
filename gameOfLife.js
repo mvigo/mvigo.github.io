@@ -94,6 +94,8 @@ function initGameOfLife(targetElement) {
     canvas.style.top = '0';
     canvas.style.left = '0';
     canvas.style.zIndex = '-1'; // Ensure the canvas stays behind the content
+    canvas.style.width = '100%'; // Add this line
+    canvas.style.height = '100%'; // Add this line
 
     targetElement.appendChild(canvas);
 
@@ -107,6 +109,7 @@ function initGameOfLife(targetElement) {
         canvas.height = targetElement.clientHeight;
     });
 }
+
 
 
 
