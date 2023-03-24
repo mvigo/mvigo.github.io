@@ -38,6 +38,12 @@
     </div>
 
     <!-- Include the JavaScript file here -->
- <script src="pantoneOfLife.js"></script> 
+    <script src="pantoneOfLife.js"></script>
+    <script>
+        window.addEventListener('load', () => {
+            const container = document.getElementById('container');
+            initPantoneGameOfLife(container);
+        });
+    </script>
 </body>
 </html>
