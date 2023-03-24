@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pantone of Life</title>
+    <title>Felipe Pantone's Game of Life</title>
     <link rel="stylesheet" href="pantone.css">
 </head>
 <body>
-    <canvas id="gameCanvas"></canvas>
-    <div class="pantone-overlay"></div>
+    <div id="gameContainer">
+        <div class="pantone-overlay"></div>
+    </div>
     <script src="pantoneOfLife.js"></script>
+    <script>
+        window.addEventListener('load', () => {
+            const gameContainer = document.getElementById('gameContainer');
+            initGameOfLife(gameContainer);
+        });
+    </script>
 </body>
 </html>
