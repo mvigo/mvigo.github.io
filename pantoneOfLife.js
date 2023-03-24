@@ -119,7 +119,7 @@ class PantoneGameOfLife {
     drawTypography() {
         // Implement your custom function to draw bold and futuristic typography inspired by Pantone's style
     }
-}
+
 
 function initPantoneGameOfLife(targetElement) {
     const canvas = document.createElement('canvas');
@@ -144,3 +144,4 @@ function initPantoneGameOfLife(targetElement) {
         canvas.height = targetElement.clientHeight;
     });
 }
+
