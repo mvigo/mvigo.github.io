@@ -40,7 +40,7 @@ h1, h2 {
 body {
   font: 400 14px/1.4 "MaisonNeue", -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #fdfdfd;
-  background-color: #fdfdfd;
+  background-color: #808080; /* Gray background color */
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
