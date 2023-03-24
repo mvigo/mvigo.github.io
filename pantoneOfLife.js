@@ -51,23 +51,26 @@ class PantoneGameOfLife {
         }
 
 
- update() {
-        let newGrid = this.createGrid();
+        update() {
+            let newGrid = this.createGrid();
 
-        for (let i = 0; i < this.columns; i++) {
-            for (let j = 0; j < this.rows; j++) {
-                let liveNeighbors = this.getLiveNeighbors(i, j);
+            for (let i = 0; i < this.columns; i++) {
+                for (let j = 0; j < this.rows; j++) {
+                    let liveNeighbors = this.getLiveNeighbors(i, j);
 
-                if (this.grid[i][j] && (liveNeighbors === 2 || liveNeighbors === 3)) {
-                    newGrid[i][j] = 1;
-                } else if (!this.grid[i][j] && liveNeighbors === 3) {
-                    newGrid[i][j] = 1;
+                    if (this.grid[i][j] === 1 && (liveNeighbors === 2 || liveNeighbors === 3)) {
+                        newGrid[i][j] = 1;
+                    } else if (this.grid[i][j] === 0 && liveNeighbors === 3) {
+                        newGrid[i][j] = 1;
+                    } else {
+                        newGrid[i][j] = 0;
+                    }
                 }
             }
+
+            this.grid = newGrid;
         }
 
-        this.grid = newGrid;
-    }
 
     getLiveNeighbors(x, y) {
         let count = 0;
