@@ -68,8 +68,18 @@
             </ul>
         </div>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var script = document.createElement('script');
+        script.src = '/gameOfLife.js';
+        script.onload = function() {
+            var rightColumn = document.getElementById('right-column');
+            initGameOfLife(rightColumn);
+        };
+        document.body.appendChild(script);
+    });
+</script>
 
-        <script src="/gameOfLife.js"></script>
 </body>
 
 </html>
