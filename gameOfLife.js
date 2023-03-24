@@ -71,7 +71,15 @@ class GameOfLife {
         return count;
     }
 
-    run() {
+ run() {
+        // Check if the canvas dimensions have changed
+        if (this.canvas.width !== this.columns * this.cellSize || this.canvas.height !== this.rows * this.cellSize) {
+            this.columns = Math.floor(this.canvas.width / this.cellSize);
+            this.rows = Math.floor(this.canvas.height / this.cellSize);
+            this.grid = this.createGrid();
+            this.randomizeGrid();
+        }
+
         this.update();
         this.draw();
         requestAnimationFrame(() => this.run());
@@ -92,7 +100,14 @@ function initGameOfLife(targetElement) {
     const gameOfLife = new GameOfLife(canvas);
     gameOfLife.randomizeGrid();
     gameOfLife.run();
+
+    // Add a resize event listener to update canvas dimensions
+    window.addEventListener('resize', () => {
+        canvas.width = targetElement.clientWidth;
+        canvas.height = targetElement.clientHeight;
+    });
 }
+
 
 
 
