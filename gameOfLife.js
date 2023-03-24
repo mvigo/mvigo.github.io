@@ -80,17 +80,20 @@ class GameOfLife {
 
 function initGameOfLife(targetElement) {
     const canvas = document.createElement('canvas');
-    targetElement.appendChild(canvas);
     canvas.width = targetElement.clientWidth;
     canvas.height = targetElement.clientHeight;
     canvas.style.position = 'absolute';
     canvas.style.top = '0';
     canvas.style.left = '0';
+    canvas.style.zIndex = '-1'; // Ensure the canvas stays behind the content
+
+    targetElement.appendChild(canvas);
 
     const gameOfLife = new GameOfLife(canvas);
     gameOfLife.randomizeGrid();
     gameOfLife.run();
 }
+
 
 
 // window.addEventListener('load', () => {

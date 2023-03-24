@@ -74,11 +74,16 @@
         script.src = '/gameOfLife.js';
         script.onload = function() {
             var rightColumn = document.getElementById('right-column');
-            initGameOfLife(rightColumn);
+            if (rightColumn) {
+                initGameOfLife(rightColumn);
+            } else {
+                console.error('Cannot find the right-column element');
+            }
         };
         document.body.appendChild(script);
     });
 </script>
+
 
 </body>
 
