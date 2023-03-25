@@ -188,7 +188,14 @@ function initPantoneGameOfLife(targetElement) {
 
     const pantoneGameOfLife = new PantoneGameOfLife(canvas);
     pantoneGameOfLife.randomizeGrid();
-    pantoneGameOfLife.run();
+
+    function run() {
+        pantoneGameOfLife.update();
+        pantoneGameOfLife.draw();
+        requestAnimationFrame(run);
+    }
+
+    run();
 
     // Add a resize event listener to update canvas dimensions
     window.addEventListener('resize', () => {
