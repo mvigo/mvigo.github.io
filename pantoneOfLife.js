@@ -174,17 +174,10 @@ drawTypography() {
 }
 
 function initPantoneGameOfLife(targetElement) {
-    const canvas = document.createElement('canvas');
-    canvas.width = targetElement.clientWidth;
-    canvas.height = targetElement.clientHeight;
-    canvas.style.position = 'absolute';
-    canvas.style.top = '0';
-    canvas.style.left = '0';
-    canvas.style.zIndex = '-1';
-    canvas.style.width = '100%';
-    canvas.style.height = '100%';
+   const canvas = document.getElementById('artworkCanvas');
+canvas.width = targetElement.clientWidth;
+canvas.height = targetElement.clientHeight;
 
-    targetElement.appendChild(canvas);
 
     const pantoneGameOfLife = new PantoneGameOfLife(canvas);
     pantoneGameOfLife.randomizeGrid();
