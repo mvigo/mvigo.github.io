@@ -49,6 +49,23 @@ class PantoneGameOfLife {
                 }
             }
         }
+
+                // Add custom functions for generating geometric shapes, patterns, and typography
+        this.drawGeometricShapes();
+        this.drawPatterns();
+        this.drawTypography();
+
+    drawGeometricShapes() {
+        // Implement your custom function to draw geometric shapes inspired by Pantone's style
+    }
+
+    drawPatterns() {
+        // Implement your custom function to draw Op Art patterns inspired by Pantone's style
+    }
+
+    drawTypography() {
+        // Implement your custom function to draw bold and futuristic typography inspired by Pantone's style
+    }
     }
 
     update() {
@@ -101,22 +118,7 @@ class PantoneGameOfLife {
     }
 }
 
-        // Add custom functions for generating geometric shapes, patterns, and typography
-        this.drawGeometricShapes();
-        this.drawPatterns();
-        this.drawTypography();
 
-    drawGeometricShapes() {
-        // Implement your custom function to draw geometric shapes inspired by Pantone's style
-    }
-
-    drawPatterns() {
-        // Implement your custom function to draw Op Art patterns inspired by Pantone's style
-    }
-
-    drawTypography() {
-        // Implement your custom function to draw bold and futuristic typography inspired by Pantone's style
-    }
 
 
 function initPantoneGameOfLife(targetElement) {
