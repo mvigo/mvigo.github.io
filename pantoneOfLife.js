@@ -50,10 +50,11 @@ class PantoneGameOfLife {
             }
         }
 
-                // Add custom functions for generating geometric shapes, patterns, and typography
+        // Add custom functions for generating geometric shapes, patterns, and typography
         this.drawGeometricShapes();
         this.drawPatterns();
         this.drawTypography();
+   // Add the closing brace here
 
     drawGeometricShapes() {
         // Implement your custom function to draw geometric shapes inspired by Pantone's style
@@ -66,7 +67,10 @@ class PantoneGameOfLife {
     drawTypography() {
         // Implement your custom function to draw bold and futuristic typography inspired by Pantone's style
     }
-    }
+
+    // ... (other methods)
+
+}
 
     update() {
         let newGrid = this.createGrid();
@@ -116,9 +120,6 @@ class PantoneGameOfLife {
         this.draw();
         requestAnimationFrame(() => this.run());
     }
-}
-
-
 
 
 function initPantoneGameOfLife(targetElement) {
@@ -144,4 +145,5 @@ function initPantoneGameOfLife(targetElement) {
         canvas.height = targetElement.clientHeight;
     });
 }
+
 
