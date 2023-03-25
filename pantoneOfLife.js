@@ -141,6 +141,4 @@ function initPantoneGameOfLife(targetElement) {
         canvas.width = targetElement.clientWidth;
         canvas.height = targetElement.clientHeight;
     });
-
-
-
+}
