@@ -174,21 +174,13 @@ drawTypography() {
 }
 
 function initPantoneGameOfLife(targetElement) {
-   const canvas = document.getElementById('artworkCanvas');
-canvas.width = targetElement.clientWidth;
-canvas.height = targetElement.clientHeight;
-
+    const canvas = document.getElementById('artworkCanvas');
+    canvas.width = targetElement.clientWidth;
+    canvas.height = targetElement.clientHeight;
 
     const pantoneGameOfLife = new PantoneGameOfLife(canvas);
     pantoneGameOfLife.randomizeGrid();
-
-    function run() {
-        pantoneGameOfLife.update();
-        pantoneGameOfLife.draw();
-        requestAnimationFrame(run);
-    }
-
-    run();
+    pantoneGameOfLife.run();
 
     // Add a resize event listener to update canvas dimensions
     window.addEventListener('resize', () => {
@@ -196,3 +188,4 @@ canvas.height = targetElement.clientHeight;
         canvas.height = targetElement.clientHeight;
     });
 }
+
