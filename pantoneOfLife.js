@@ -105,7 +105,6 @@ class PantoneGameOfLife {
         this.drawGeometricShapes();
         this.drawPatterns();
         this.drawTypography();
-    }
 
     drawGeometricShapes() {
         // Implement your custom function to draw geometric shapes inspired by Pantone's style
