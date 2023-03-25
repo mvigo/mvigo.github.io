@@ -24,7 +24,7 @@ class PantoneGameOfLife {
         }
     }
 
-draw() {
+    draw() {
         // Choose a random color from the Pantone-inspired color palette
         const colors = [
             'rgba(0, 255, 255, 0.2)',
@@ -56,72 +56,74 @@ draw() {
         this.drawTypography();
     
 
-    drawGeometricShapes() {
-             this.ctx.beginPath();
-          this.ctx.moveTo(100, 100);
-          this.ctx.lineTo(140, 80);
-          this.ctx.lineTo(160, 120);
-          this.ctx.lineTo(140, 160);
-          this.ctx.lineTo(100, 180);
-          this.ctx.lineTo(60, 160);
-          this.ctx.lineTo(40, 120);
-          this.ctx.lineTo(60, 80);
-          this.ctx.closePath();
+drawGeometricShapes() {
+  this.ctx.beginPath();
+  this.ctx.moveTo(100, 100);
+  this.ctx.lineTo(140, 80);
+  this.ctx.lineTo(160, 120);
+  this.ctx.lineTo(140, 160);
+  this.ctx.lineTo(100, 180);
+  this.ctx.lineTo(60, 160);
+  this.ctx.lineTo(40, 120);
+  this.ctx.lineTo(60, 80);
+  this.ctx.closePath();
 
-          const gradient = this.ctx.createLinearGradient(0, 0, 200, 0);
-          gradient.addColorStop(0, 'red');
-          gradient.addColorStop(0.5, 'yellow');
-          gradient.addColorStop(1, 'green');
+  const gradient = this.ctx.createLinearGradient(0, 0, 200, 0);
+  gradient.addColorStop(0, 'red');
+  gradient.addColorStop(0.5, 'yellow');
+  gradient.addColorStop(1, 'green');
 
-          this.ctx.fillStyle = gradient;
-          this.ctx.fill();    }
+  this.ctx.fillStyle = gradient;
+  this.ctx.fill();
+}
 
-    drawPatterns() {
-                const centerX = this.canvas.width / 2;
-        const centerY = this.canvas.height / 2;
-        const squareSize = 40;
-        const squareSpacing = 10;
-        const numSquares = 10;
-        const angleStep = 0.05;
 
-        this.ctx.fillStyle = 'rgba(255, 255, 255, 0.5)';
-        this.ctx.strokeStyle = 'rgba(255, 255, 255, 0.5)';
-        this.ctx.lineWidth = 2;
+ drawPatterns() {
+    const centerX = this.canvas.width / 2;
+    const centerY = this.canvas.height / 2;
+    const squareSize = 40;
+    const squareSpacing = 10;
+    const numSquares = 10;
+    const angleStep = 0.05;
 
-        for (let i = 0; i < numSquares; i++) {
-            const angle = i * angleStep;
-            const x = centerX + Math.cos(angle) * (squareSize * (numSquares - i + 1) + squareSpacing * (numSquares - i));
-            const y = centerY + Math.sin(angle) * (squareSize * (numSquares - i + 1) + squareSpacing * (numSquares - i));
+    this.ctx.fillStyle = 'rgba(255, 255, 255, 0.5)';
+    this.ctx.strokeStyle = 'rgba(255, 255, 255, 0.5)';
+    this.ctx.lineWidth = 2;
 
-            this.ctx.strokeRect(x - squareSize / 2, y - squareSize / 2, squareSize, squareSize);
-            this.ctx.fillRect(x - squareSize / 2, y - squareSize / 2, squareSize, squareSize);
-        }
+    for (let i = 0; i < numSquares; i++) {
+        const angle = i * angleStep;
+        const x = centerX + Math.cos(angle) * (squareSize * (numSquares - i + 1) + squareSpacing * (numSquares - i));
+        const y = centerY + Math.sin(angle) * (squareSize * (numSquares - i + 1) + squareSpacing * (numSquares - i));
+
+        this.ctx.strokeRect(x - squareSize / 2, y - squareSize / 2, squareSize, squareSize);
+        this.ctx.fillRect(x - squareSize / 2, y - squareSize / 2, squareSize, squareSize);
     }
+}
 
-    drawTypography() {
-                    // Set the font style
-                this.ctx.font = 'bold 60px Arial';
+drawTypography() {
+    // Set the font style
+    this.ctx.font = 'bold 60px Arial';
 
-                // Set the fill color
-                this.ctx.fillStyle = '#FFF';
+    // Set the fill color
+    this.ctx.fillStyle = '#FFF';
 
-                // Set the text content
-                const text = 'Pantone';
+    // Set the text content
+    const text = 'Pantone';
 
-                // Get the width of the text
-                const textWidth = this.ctx.measureText(text).width;
+    // Get the width of the text
+    const textWidth = this.ctx.measureText(text).width;
 
-                // Calculate the x and y coordinates to center the text
-                const x = (this.canvas.width - textWidth) / 2;
-                const y = (this.canvas.height / 2) + (this.cellSize / 2);
+    // Calculate the x and y coordinates to center the text
+    const x = (this.canvas.width - textWidth) / 2;
+    const y = (this.canvas.height / 2) + (this.cellSize / 2);
 
-                // Draw the text
-                this.ctx.fillText(text, x, y);
-            }
-   
+    // Draw the text
+    this.ctx.fillText(text, x, y);
+}
 
+} 
     update() {
-                let newGrid = this.createGrid();
+        let newGrid = this.createGrid();
 
         for (let i = 0; i < this.columns; i++) {
             for (let j = 0; j < this.rows; j++) {
@@ -141,7 +143,7 @@ draw() {
     }
 
     getLiveNeighbors(x, y) {
-                let count = 0;
+        let count = 0;
 
         for (let i = -1; i < 2; i++) {
             for (let j = -1; j < 2; j++) {
@@ -155,8 +157,8 @@ draw() {
         return count;
     }
 
-    run() {
-      // Check if the canvas dimensions have changed
+run() {
+    // Check if the canvas dimensions have changed
     if (this.canvas.width !== this.columns * this.cellSize || this.canvas.height !== this.rows * this.cellSize) {
         this.columns = Math.floor(this.canvas.width / this.cellSize);
         this.rows = Math.floor(this.canvas.height / this.cellSize);
@@ -170,17 +172,18 @@ draw() {
 }
 
 function initPantoneGameOfLife(targetElement) {
-    const canvas = document.getElementById('artworkCanvas');
+  const canvas = document.getElementById('artworkCanvas');
+  canvas.width = targetElement.clientWidth;
+  canvas.height = targetElement.clientHeight;
+
+  const pantoneGameOfLife = new PantoneGameOfLife(canvas);
+  pantoneGameOfLife.randomizeGrid();
+  pantoneGameOfLife.run();
+
+  // Add a resize event listener to update canvas dimensions
+  window.addEventListener('resize', () => {
     canvas.width = targetElement.clientWidth;
     canvas.height = targetElement.clientHeight;
-
-    const pantoneGameOfLife = new PantoneGameOfLife(canvas);
-    pantoneGameOfLife.randomizeGrid();
-    pantoneGameOfLife.run();
-
-    // Add a resize event listener to update canvas dimensions
-    window.addEventListener('resize', () => {
-        canvas.width = targetElement.clientWidth;
-        canvas.height = targetElement.clientHeight;
-    });
+  });
 }
+
