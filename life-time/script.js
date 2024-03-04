@@ -10,7 +10,7 @@ document.getElementById('lifeClockForm').addEventListener('submit', function(e) 
     e.preventDefault(); // Prevent the form from submitting in the traditional way
     const dob = document.getElementById('dob').value;
     const resultElement = document.getElementById('result');
-    const lifeExpectancy = 80; // Average life expectancy, adjust as needed
+    const lifeExpectancy = 70; // Average life expectancy, adjust as needed
 
     if (dob) {
         const currentTime = new Date();
