@@ -1,3 +1,11 @@
+document.getElementById('continueButton').addEventListener('click', function() {
+    document.getElementById('splashScreen').style.display = 'none';
+    document.getElementById('mainContent').style.display = 'block';
+});
+
+// Existing life clock script goes here
+
+
 document.getElementById('lifeClockForm').addEventListener('submit', function(e) {
     e.preventDefault(); // Prevent the form from submitting in the traditional way
     const dob = document.getElementById('dob').value;
